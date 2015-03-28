@@ -28,9 +28,6 @@ public class CurrentWeather {
     public void setSummary(String summary) {
         mSummary = summary;
     }
-    public String getIcon() {
-        return mIcon;
-    }
     public void setIcon(String icon) {
         mIcon = icon;
     }
@@ -40,8 +37,8 @@ public class CurrentWeather {
     public void setTime(long time) {
         mTime = time;
     }
-    public double getTemp() {
-        return mTemp;
+    public int getTemp() {
+        return (int)Math.round(mTemp);
     }
     public void setTemp(double temp) {
         mTemp = temp;
@@ -52,8 +49,9 @@ public class CurrentWeather {
     public void setHumidity(double humidity) {
         mHumidity = humidity;
     }
-    public double getPrecipChance() {
-        return mPrecipChance;
+    public int getPrecipChance() {
+        double precipPercentage = mPrecipChance * 100;
+        return (int)Math.round(precipPercentage);
     }
     public void setPercipChance(double percipChance) {
         mPrecipChance = percipChance;
