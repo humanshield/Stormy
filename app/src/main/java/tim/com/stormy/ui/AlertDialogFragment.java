@@ -1,10 +1,12 @@
-package tim.com.stormy;
+package tim.com.stormy.ui;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.Context;
 import android.os.Bundle;
+
+import tim.com.stormy.R;
 
 /**
  * Created by tim on 3/27/15.
